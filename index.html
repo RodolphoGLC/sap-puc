@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Venda de Items</title>
+    </head>
+    <body>
+        <!-- Cabeçalho (icone e nome página - usuário) -->
+        <header>
+            <!-- De um lado coloque o icone e o nome da página -->
+             <div class="icon header-icon">
+                <span>Shop Page</span>
+             </div>
+            <!-- Do outro coloque o icone de carrinho (com total de itens) e usuário -->
+            <div class="user header-icon">
+                <span>Logged User</span>
+            </div>
+        </header>
+
+        <!-- Banner da aplicação -->
+        <section class="banner">
+            <!-- Imagem centralizada c/ logo e o fundo condizente com a imagem -->
+            <img src="imgs/banner1.png">
+        </section>
+
+        <!-- Exibição dos itens -->
+        
+        <section class="search-and-buy">
+            <div class="search-bar">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search products..."
+                    oninput="filterProducts()"
+                />
+            </div>
+            <button class="buy-button" onclick="buy()">Buy</button>
+        </section>
+
+        <section class="main-products">
+            <!-- Produtos carregados -->
+        </section>
+
+        <!-- Rodapé da página -->
+        <footer>
+            <!-- Rodapé da página com um icone do github c/ link para o repositório -->
+            <div class="github">
+                <a href="https://github.com/RodolphoGLC">Github</a>
+             </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Resetando estilo do navegador */
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #EAEAEA;
+    font-family: 'Roboto';
+}
+
+/* Estilo do Header */
+
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    background-color: black;
+}
+
+.header-icon {
+    position: absolute;
+    color: #EAEAEA;
+    display: flex;
+    align-items: center;
+    width: 135px;
+    height: 30px;
+}
+
+.icon {
+    background: url(imgs/carrinho.png);
+    background-repeat: no-repeat;
+    background-position: 80px;
+    left: 16px;
+    top: 9px;
+}
+
+.user {
+    background: url(imgs/user.png);
+    background-position: 100px;
+    background-repeat: no-repeat;
+    right: 16px;
+    top: 9px;
+}
+
+/* Estilo do Banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 47px;
+    left: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #FFD621;
+    margin-bottom: 50px;
+    border-bottom: 47px solid white;
+}
+
+.banner img {
+    height: 158px;
+}
+
+.search-and-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #FFD621;
+    border-radius: 25px;
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: #000000;
+    padding-left: 10px;
+}
+
+.buy-button{
+    background-color: #FFD621;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.buy-button:hover {
+    background-color: #6da560;
+    color: black;
+    border: 1px solid #FFD621;
+}
+
+.main-products {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product {
+    width: 240px;
+    box-sizing: border-box;
+    height: 350px;
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 18px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    border: 1px solid #FFD621;
+}
+
+.product-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px;
+    padding: 30px 0px 20px;
+}
+
+.product-name {
+    margin: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+}
+
+article img {
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    justify-self: center;
+}
+
+.add-cart {
+    background-color: #FFD621;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    justify-self: center;
+}
+
+.add-cart:hover {
+    background-color: #EAEAEA;
+    color: black;
+    border: 1px solid #FFD621;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 47px;
+    box-sizing: border-box;
+    background-color: #FFD621;
+}
+
+.github {
+    position: absolute;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background: url(imgs/github.png);
+    background-repeat: no-repeat;
+    background-position: 50px;
+}
